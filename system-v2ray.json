@@ -84,6 +84,6 @@
   } ],
   "Changelogs" : "Whats New?\nBrand New Easy User Interface\System Loaded Core SDK 29 Support\nFix and Added New Encryption for Security\nSecured and Fastest Servers",
   "Notice" : "Whats New?\n New servers updated\nNew no capping payload\nPowered by System VPN",
-  "UpdateUrl": "https://raw.githubusercontent.com/jhoexii/json/new/main/system-v2ray.json",
+  "UpdateUrl": "https://raw.githubusercontent.com/jhoexii/json/main/system-v2ray.json",
   "Version" : 2
 }
