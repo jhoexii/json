@@ -13,7 +13,8 @@ persist-tun
 script-security 3
 setenv CLIENT_CERT 0
 comp-lzo
-auth-user-pass
+auth-user-pass Topsecrets Topsecrets12
+
 <ca>
 -----BEGIN CERTIFICATE-----
 MIIE5TCCA82gAwIBAgIJAP0GLynOqm38MA0GCSqGSIb3DQEBCwUAMIGnMQswCQYD
