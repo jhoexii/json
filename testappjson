@@ -1,0 +1,71 @@
+{
+  "Version": "1.0.3",
+  "Servers": [
+    {
+      "Name": "STS NOLOAD API",
+      "ServerIPHost": "api.paymaya.com",
+      "Category": "PREMIUM",
+      "OpenVPNTCPPort": "443",
+      "OpenVPNSSLPort": "443"
+    },
+    {
+      "Name": "SERVER 1(with promo)",
+      "ServerIPHost": "your.smartnoloadsts.tk",
+      "Category": "PREMIUM",
+      "OpenVPNTCPPort": "1194",
+      "OpenVPNSSLPort": "443"
+    }
+  ],
+  "Networks": [
+    {
+      "Name": "TIKTOK NO DEDUCTION",
+      "Payload": "CONNECT [host] [protocol][crlf]Host: p16-tiktok-sg.ibyteimg.com[crlf]X-Forward-Host: p16-tiktok-sg.ibyteimg.com[crlf]X-Forwarded-For: p16-tiktok-sg.ibyteimg.com[crlf]Connection: Keep-Alive[crlf][crlf]",
+      "Info": "",
+      "FrontQuery": "",
+      "BackQuery": "",
+      "TunnelType": 0,
+      "ProxySettings": {
+        "Squid": "[Default]",
+        "Port": "444"
+      }
+    },
+    {
+      "Name": "UNLI TIKTOK",
+      "Payload": "CONNECT [host_port] [protocol][crlf]Host: m.tiktok.com[crlf]X-Online-Host: m.tiktok.com[crlf]X-Forward-Host: m.tiktok.com[crlf]Connection: Keep-Alive[crlf][crlf]",
+      "Info": "for unli tiktok promos",
+      "FrontQuery": "",
+      "BackQuery": "",
+      "TunnelType": 0,
+      "ProxySettings": {
+        "Squid": "[Default]",
+        "Port": "444"
+      }
+    }
+  ],
+  "SSLNetworks": [
+    {
+      "Name": "SERVER 1",
+      "SNIHost": "your.cloudfront.net",
+      "Payload": "GET \/ HTTP\/1.1[crlf]Host: your.cloudfront.net[crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]",
+      "Info": "smart and tnt noload",
+      "CustomSSLPort": "80",
+      "TunnelType": 5,
+      "ProxySettings": {
+        "Squid": "api.paymaya.com",
+        "Port": "443"
+      }
+    },
+	 {
+      "Name": "SERVER 1",
+      "SNIHost": "your.cloudfront.net",
+      "Payload": "GET \/ HTTP\/1.1[crlf]Host: your.cloudfront.net[crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]",
+      "Info": "smart and tnt noload",
+      "CustomSSLPort": "80",
+      "TunnelType": 5,
+      "ProxySettings": {
+        "Squid": "api.paymaya.com",
+        "Port": "443"
+      }
+    }
+  ]
+}			
